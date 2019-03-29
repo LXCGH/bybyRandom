@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/basicMessage/index",
+    "pages/groupingResult/index",
+    "pages/index/index",
+    "pages/quest/quest"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#5677FB",
+    "navigationBarTitleText": "登录",
+    "navigationBarTextStyle": "white"
+  }
+}

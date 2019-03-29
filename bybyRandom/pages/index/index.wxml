@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="index">
+  <view class="head">
+    <view class="left">
+      <text>入组总数</text>
+      <text class="count">{{countData.inCount}}</text>
+    </view>
+    <view class="right">
+      <text>微信小程序组 {{countData.group2Count}}</text>
+      <text class="tow">常规指导组 {{countData.group1Count}}</text>
+    </view>
+  </view>
+  <view class="table">
+    <view  class="row"
+           data-id="{{item.id}}"
+           data-item="{{item}}"
+           bindtap="goNextPage" data-url="../groupingResult/index"
+           wx:for="{{listData}}"
+           wx:for-index="index"
+           wx:for-item="item"
+           wx:key="item"
+    >
+      <view class="tableContent">
+        <view class="col1">{{item.name}}</view>
+        <view class="col2">{{item.sex===1?'男':'女'}}</view>
+        <view class="col3">
+          <text wx:if="{{item.status!==0}}">{{item.code}}</text>
+          <text wx:if="{{item.status===0}}" class="red">进行中</text>
+        </view>
+      </view>
+      <view class="imageMain" wx:if="{{item.groupFlag==1}}">
+        <image src="../../images/groupingSign.png" mode="{{aspectFill}}"></image>
+      </view>
+    </view>
+  </view>
+  <view class="newMain">
+    <view bindtap="newObject" data-url="../basicMessage/index">新建</view>
+  </view>
+</view>

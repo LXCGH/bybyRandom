@@ -1,0 +1,42 @@
+<!--pages/login/login.wxml-->
+<view class="loginMain">
+  <view class="imageMain">
+    <image src="../../images/login.jpg" mode="{{aspectFill}}"></image>
+  </view>
+  <view class="form">
+    <view class="inputMain">
+      <input maxlength="11"
+             placeholder="请输入账号"
+             bindinput="getInputValue"
+             data-type="account"
+             type="number" auto-focus />
+    </view>
+    <view class="inputMain">
+      <input placeholder="请输入密码"
+             type="password"
+             bindinput="getInputValue"
+             data-type="password"/>
+    </view>
+    <view class="inputMain submitMain">
+      <button type="primary"
+              data-url="../index/index"
+              bindtap="loginFn">登录</button>
+    </view>
+  </view>
+  <view class="tipMain">
+    <view>
+      <text>本小程序为专项工具</text>
+    </view>
+    <view>
+      <text>非本项目研究人员无权限登录</text>
+    </view>
+  </view>
+  <view class="tipMain bottom">
+    <view>
+      <text>技术支持：北京锐客科技有限公司</text>
+    </view>
+    <view>
+      <text>联系方式：18001103125</text>
+    </view>
+  </view>
+</view>

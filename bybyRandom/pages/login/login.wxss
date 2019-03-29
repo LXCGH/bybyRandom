@@ -1,0 +1,60 @@
+/* pages/login/login.wxss */
+.loginMain .imageMain{
+    width: 750rpx;
+    height: 400rpx;
+}
+.loginMain .imageMain image{
+    width: 750rpx;
+    height: 400rpx;
+}
+.loginMain .form{
+    margin-top: 40rpx;
+}
+.loginMain .inputMain{
+    margin-bottom: 8rpx;
+}
+.loginMain .inputMain input{
+    width: 600rpx;
+    height: 90rpx;
+    background: #F6F6F6;
+    border-radius: 100rpx;
+    text-align: center;
+    margin-left: 76rpx;
+    color: #999999;
+    font-size: 28rpx;
+}
+.loginMain .submitMain{
+    margin-top: 118rpx;
+}
+.loginMain .submitMain button{
+    width: 600rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    margin-left: 76rpx;
+    text-align: center;
+    color: #ffffff;
+    font-size: 32rpx;
+    border-radius: 100rpx;
+    background: #5677FB;
+}
+.loginMain .tipMain{
+    margin-top: 18rpx;
+    text-align: center;
+}
+.loginMain .tipMain view{
+    height: 24rpx;
+    line-height: 24rpx;
+    margin-bottom: 10rpx;
+}
+.loginMain .tipMain view text{
+    color: rgba(153, 153, 153, 1);
+    font-size: 24rpx;
+    text-align: center;
+    font-family: PingFangSC-regular;
+}
+.loginMain .bottom{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 40rpx;
+}

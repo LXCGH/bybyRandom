@@ -1,0 +1,76 @@
+/* pages/basicMessage/index.wxss */
+.basic .tip{
+    width: 100%;
+    font-size: 24rpx;
+    color: #999;
+    text-align: center;
+    position: absolute;
+    bottom: 120rpx;
+}
+.basic .form>view{
+    height: 90rpx;
+    line-height: 90rpx;
+    box-sizing: border-box;
+    margin: 0 30rpx;
+    border-bottom: 2px solid #dddddd;
+    overflow: hidden;
+}
+.basic .form>view text{
+    float: left;
+    font-size: 28rpx;
+    color: #333;
+}
+.basic .form>view input{
+    float: right;
+    text-align: right;
+    font-size: 28rpx;
+    color: #333;
+    height: 90rpx;
+    line-height: 90rpx
+}
+.basic .form>view image{
+    float: right;
+    height: 30rpx;
+    width: 20rpx;
+    margin-top: 30rpx;
+}
+.basic .radio-group{
+    font-size: 28rpx;
+    float: right;
+}
+.basic .radio-group radio {
+    transform:scale(0.7);
+}
+.basic .radio-group label:first-child{
+    margin-right: 50rpx;
+}
+.basic picker view{
+    text-align: right;
+    font-size: 28rpx;
+    color: #333;
+}
+
+
+.basic .nextStep{
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    overflow: hidden;
+}
+.basic .nextStep view{
+    width: 50%;
+    float: left;
+    height: 90rpx;
+    line-height: 90rpx;
+    border-radius: 0;
+    background-color: rgba(86, 119, 251, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 32rpx;
+    text-align: center;
+    font-family: Arial;
+}
+.basic .nextStep view:first-child{
+    background: #f4f4f4;
+    color: #333;
+}

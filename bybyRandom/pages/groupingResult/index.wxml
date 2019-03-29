@@ -1,0 +1,18 @@
+<!--pages/groupingResult/index.wxml-->
+<view class="groupingResult">
+  <view class="content">
+    <view class="code">{{resData.code}}</view>
+    <view class="name">{{resData.name}}</view>
+    <view class="sex">{{resData.sex===1?'男':'女'}}</view>
+  </view>
+  <view class="groupName">
+    {{resData.groupFlag===1?'微信小程序组':'常规指导组'}}
+  </view>
+  <!--<view class="operate" bindtap="deleteItem" data-id="{{resData.id}}">-->
+    <!--<image src="../../images/deleteIcon.png" mode="{{aspectFill}}"></image>-->
+    <!--<text>删除该调查对象</text>-->
+  <!--</view>-->
+  <view class="backMain">
+    <view type="default" bindtap="goIndex">返回首页</view>
+  </view>
+</view>

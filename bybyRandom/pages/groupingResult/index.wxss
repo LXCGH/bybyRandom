@@ -1,0 +1,61 @@
+/* pages/groupingResult/index.wxss */
+.groupingResult .content{
+    text-align: center;
+    width: 100%;
+}
+.groupingResult .content .code{
+    margin-top: 156rpx;
+    font-size: 60rpx;
+    font-weight: bold;
+    color: #333333;
+}
+.groupingResult .content .name{
+    margin-top: 38rpx;
+    font-size: 32rpx;
+    color: #333333;
+}
+.groupingResult .content .sex{
+    margin-top: 28rpx;
+    font-size: 32rpx;
+    color: #333333;
+    margin-bottom: 80rpx;
+}
+.groupingResult .groupName{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60rpx;
+    color: #5677FB;
+    margin-bottom: 54rpx;
+}
+.groupingResult .operate{
+    text-align: center;
+}
+.groupingResult .operate image{
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: top;
+    margin-right: 10rpx;
+}
+.groupingResult .operate{
+    width: 100%;
+    color: #999999;
+    font-size: 28rpx;
+    font-weight: bold;
+}
+.groupingResult .backMain{
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+}
+.groupingResult .backMain view{
+    height: 90rpx;
+    line-height: 90rpx;
+    border-radius: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 32rpx;
+    text-align: center;
+    font-family: Arial;
+}

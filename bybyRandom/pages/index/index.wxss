@@ -1,0 +1,122 @@
+page{
+    height: 100%;
+    box-sizing: border-box;
+}
+.index{
+    height: 100%;
+    background: #f4f4f4;
+}
+.index .head{
+    height: 66rpx;
+    line-height: 66rpx;
+    padding-top: 28rpx;
+    padding-bottom: 26rpx;
+    overflow: hidden;
+    background: #fff;
+}
+.index .head .left{
+    height: 60rpx;
+    line-height: 60rpx;
+    float: left;
+    width: 290rpx;
+    border-right: 2rpx solid #dddddd;
+}
+.index .head .left text:first-child{
+    font-size: 24rpx;
+    color: #999;
+    vertical-align: middle;
+    margin: 0rpx 30rpx;
+}
+.index .head .left .count{
+    font-size: 48rpx;
+    color: #5677FB;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.index .head .right{
+    padding-left: 20rpx;
+    float: left;
+}
+
+.index .head .right text{
+    font-size: 24rpx;
+    color: #999;
+}
+
+.index .head .right text:first-child{
+    display: inline-block;
+    width: 236rpx;
+    vertical-align: middle;
+    font-size: 24rpx;
+    color: #999;
+}
+.index .table{
+    background: #fff;
+    width: 100%;
+    position: relative;
+    padding:0 0rpx 250rpx 30rpx;
+    box-sizing: border-box;
+}
+.index .table .tableContent{
+    margin-right:30rpx;
+    overflow:hidden;
+    border-bottom:2px solid #ddd;
+    box-sizing:border-box; height:90rpx;
+}
+.index .table .row{
+    position: relative;
+    height: 90rpx;
+    line-height: 90rpx;
+    overflow: hidden;
+}
+.index .table .row .tableContent view{
+    float: left;
+}
+.index .table .row .col1{
+    width: 126rpx;
+    font-size: 32rpx;
+    color: #333;
+}
+.index .table .row .col2{
+    width: 100rpx;
+    font-size: 28rpx;
+    color: #999999;
+}
+.index .table .row .col3{
+    width: 460rpx;
+    text-align: right;
+    font-size: 28rpx;
+    color: #999999;
+}
+.index .table .row .imageMain{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80rpx;
+    height: 56rpx;
+}
+.index .table .row .imageMain image{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}
+.index .newMain{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+}
+.index .newMain view{
+    height: 90rpx;
+    line-height: 90rpx;
+    border-radius: 0;
+    background-color: rgba(86, 119, 251, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 32rpx;
+    text-align: center;
+    font-family: Arial;
+}
+.index .red{
+    color: orangered;
+}

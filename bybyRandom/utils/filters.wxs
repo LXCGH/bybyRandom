@@ -1,0 +1,52 @@
+/*截取时间年月日*/
+function splitDate(date){
+  console.log(date)
+  return date.split(" ")[0];
+}
+/*截取时间时分秒*/
+function splitTime(time){
+  console.log(time)
+  return time.split(" ")[1].substring(0,5);
+}
+/*保留两个小数*/
+function numToFixed(numberObject){
+  console.log(numberObject);
+  value = numberObject*100;
+  return value.toFixed(2);
+}
+function jsonParse(str){
+  return JSON.parse(str);
+}
+/*
+*  计算每项服务费用
+*  index:当前服务项
+*  costArr：服务金额
+*  days:服务天数
+*/
+module.exports = {
+  splitDate: splitDate,
+  splitTime: splitTime,
+  numToFixed: numToFixed,
+  jsonParse:jsonParse,
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

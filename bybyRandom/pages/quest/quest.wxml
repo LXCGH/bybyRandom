@@ -1,0 +1,27 @@
+<view class="quest">
+  <view class="pageNum">{{index+1}}/{{questions.length}}</view>
+  <view class="tipType">
+    <text>{{questions[index].title}}</text>
+  </view>
+  <view>
+  <view
+      wx:for="{{questions[index].answers}}"
+			data-index="{{index}}"
+			wx:for-item="item"
+			wx:key="item"
+      class="answer {{item.isChecked ? 'active' : ''}}"
+      bindtap="radioChange">{{item.title}}</view>
+  </view>
+  <view class="giveup" bindtap="giveUpFn">
+    <image src="../../images/giveup.png"></image>
+    <text>放弃筛选</text>
+  </view>
+  <view class="submit" wx:if="{{index+1 == 1}}"
+        bindtap="nextQuestion">下一题</view>
+  <view class="submit" wx:if="{{index+1 > 1}}">
+    <view bindtap="lastQuestion">上一题</view>
+    <view bindtap="nextQuestion">
+      {{index+1 == questions.length ? '完成' : '下一题'}}
+    </view>
+  </view>
+</view>

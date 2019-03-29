@@ -1,0 +1,47 @@
+<!--pages/basicMessage/index.wxml-->
+<view class="basic">
+  <view class="form">
+    <view>
+      <text>筛选号</text>
+      <input type="number"
+             placeholder="请输入"
+             bindinput="getInputValue"
+             data-type="filterCode"
+             placeholder-style="#999"/>
+    </view>
+    <view>
+      <text>姓名缩写</text>
+      <input placeholder="填写姓名首字母(大写)"
+             bindinput="getInputValue"
+             data-type="name"
+             maxlength="5"
+             value='{{reqData.name}}'
+             placeholder-style="#999"/>
+    </view>
+    <view>
+      <text>性别</text>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{items}}" wx:key="{{items}}">
+          <radio value="{{item.name}}" color="#5677FB" checked="{{item.checked}}" />
+          {{item.value}}
+        </label>
+      </radio-group>
+    </view>
+    <view>
+      <text>知情同意书签署日期</text>
+      <image src="../../images/selectIcon.png" mode="{{aspectFill}}"></image>
+      <picker mode="date" value="{{date}}" start="2018-09-01" end="2055-01-01" bindchange="bindDateChange">
+        <view class="picker">
+          {{reqData.signDate}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="tip">
+    <text>技术支持：北京锐客科技有限公司</text>
+  </view>
+  <view class="nextStep">
+    <view bindtap="backPage" data-url="../index/index">返回</view>
+    <view bindtap="nextStep" data-url="../quest/quest">下一步</view>
+  </view>
+</view>
